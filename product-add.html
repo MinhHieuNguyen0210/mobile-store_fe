@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product add</title>
+    <link rel="stylesheet" href="assests/css/product-add.css">
+    <link rel="stylesheet" href="assests/css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"
+        integrity="sha512-VZ6m0F78+yo3sbu48gElK4irv2dzPoep8oo9LEjxviigcnnnNvnTOJRSrIhuFk68FMLOpiNz+T77nNY89rnWDg=="
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="app">
+        <div class="header">
+            <div class="product-header">
+                <h2 class="product-header__name">Products</h2>
+                <p class="product-header__title">Add product</p>
+            </div>
+            <button class="button-logout">
+                Logout
+            </button>
+        </div>
+        <div class="content">
+            <div class="product-title">
+                Add new products
+            </div>
+            <hr class="product-hr">
+            <div class="product-content">
+                <form method="POST" action="" enctype="multipart/form-data">
+                    <div class="product-item">
+                        <p class="product-item__title">Product Name</p>
+                        <input name="productName" type="text" class="product-item__input">
+                    </div>
+                    <div class="product-item">
+                        <p class="product-item__title">Unit Price</p>
+                        <input name="unitPrice" type="text" class="product-item__input">
+                    </div>
+                    <div class="product-item">
+                        <p class="product-item__title">Units in Stock</p>
+                        <input name="unitInStock" type="text" class="product-item__input">
+                    </div>
+                    <div class="product-item">
+                        <p class="product-item__title">Description</p>
+                        <input name="description" type="text" class="product-item__input product-description">
+                    </div>
+                    <div class="product-item">
+                        <p class="product-item__title">Manufacturer</p>
+                        <input name="manufacturer" type="text" class="product-item__input">
+                    </div>
+                    <div class="product-item">
+                        <p class="product-item__title">Category</p>
+                        <input name="category" type="text" class="product-item__input"">
+                    </div>
+                    <div class=" product-item">
+                        <p class="product-item__title">Condition</p>
+                        <div class="product-item__radio-btn">
+                            <input type="radio" class="product-item__radio-item" id="1" name="lang" value="New">
+                            <label for="1" class="product-item_label">New</label><br>
+                            <input type="radio" class="product-item__radio-item" id="2" name="lang" value="Old">
+                            <label for="2" class="product-item_label">Old</label><br>
+                            <input type="radio" class="product-item__radio-item" id="3" name="lang" value="Refurbished">
+                            <label for="3" class="product-item_label">Refurbished</label><br>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <p class="product-item__title">Product Image File</p>
+                        <div class="product-item__choose-file">
+                            <input type="file" name="file" />
+                        </div>
+                    </div>
+
+                    <button type="submit" id="post-btn" class="add-product" onclick="redirect();">
+                        Add product
+                    </button>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script/product-add.js">
+
+    </script>
+
+    <!-- <script src="script/product-add.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+.app {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.header {
+  height: 150px;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+.product-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.product-header__name {
+  padding-left: 90px;
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 300;
+}
+.container {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.product-details__image {
+  height: 400px;
+  width: 400px;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+.product-details__container {
+  width: 600px;
+  margin-top: 34px;
+}
+.product-details__brands {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.product-details__desc {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.product-details__item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.product-details__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.product-details__value.product-apple {
+  color: var(--button-details);
+}
+.product-details__value {
+  font-size: 1.1rem;
+  margin-left: 4px;
+}
+.product-details__value.product-code {
+  background-color: orange;
+  color: var(--white-color);
+  border-radius: 2px;
+  padding: 2px;
+  margin-left: 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.product-details__price {
+  font-size: 1.5rem;
+}
+.button-control {
+  display: flex;
+  align-items: center;
+}
+.btn.btn-back {
+  background-color: var(--button-color);
+  margin: 5px 5px;
+}
+.btn.btn-order {
+  width: 100px;
+  background-color: orange;
+}

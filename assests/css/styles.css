@@ -1,0 +1,68 @@
+/*
+  Login page
+*/
+.app {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.header {
+  height: 150px;
+  background-color: var(--main-color);
+  line-height: 150px;
+}
+.header__name {
+  margin: 0;
+  font-size: 40px;
+  margin-left: 100px;
+  font-weight: 300;
+}
+.content {
+}
+
+.login-form {
+  width: 300px;
+  margin: 20px auto;
+
+  height: 164px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.login-form__header {
+  height: 30px;
+  background-color: var(--main-color);
+  border-bottom: 1px solid #ccc;
+}
+
+.login-form__header--title {
+  font-size: 1.6rem;
+  margin: 0 10px;
+  line-height: 3.2rem;
+}
+
+.login-form__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 110px;
+  /* padding: 0 10px; */
+  margin: 10px;
+}
+
+.login-form__input {
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding-left: 10px;
+  font-size: 1.3rem;
+}
+
+.login-form__login-btn {
+  height: 35px;
+  border: none;
+  border-radius: 3px;
+  background-color: #04b45f;
+  color: var(--white-color);
+  font-size: 1.6rem;
+  padding: 0;
+}
